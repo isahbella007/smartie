@@ -25,7 +25,7 @@ app.message(async ({ message, say }) => {
   console.log("user input => ", text);
   const gtpResponse = await getGptAnswer(text);
   await say(
-    `Hey <@${message.user}>! the answer to your question is ${gtpResponse}`
+    `Hey <@${message.user}>! ${gtpResponse}`
   );
 });
 
